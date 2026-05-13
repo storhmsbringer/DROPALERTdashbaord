@@ -264,7 +264,7 @@ elif menu == "Model Prediksi":
 
     if btn_predict:
         st.markdown("---")
-        # Generate simulated risk score derived from province macro data
+        # ngarang maaf
         prov_macro = df[df['Provinsi'] == input_prov].iloc[-1]
         base_risk = (prov_macro['gabungan_pendudukmiskin'] * 1.5) + (prov_macro['TPT'] * 1.2)
         if input_usia > 18: base_risk += 12
